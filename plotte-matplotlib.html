@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plotte med Matplotlib</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Roboto, sans-serif;
+        background-color: #fcfcfc;
+        padding: 20px;
+        line-height: 1.6;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      code {
+        background-color: #eee;
+        padding: 4px 8px;
+        border-radius: 6px;
+        display: inline-block;
+      }
+
+      pre {
+        background-color: #f0f0f0;
+        padding: 12px;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+
+      .back-link {
+        margin-top: 20px;
+        display: inline-block;
+        text-decoration: none;
+        color: #0077cc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Plotte med Matplotlib</h1>
+
+    <p>
+      Dette er den enkleste måten å lage en graf i Python med
+      <code>matplotlib</code>:
+    </p>
+
+    <pre><code>import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4]
+y = [1, 4, 9, 16]
+
+plt.plot(x, y)
+plt.title("Min første graf")
+plt.xlabel("x-verdi")
+plt.ylabel("y-verdi")
+plt.show()</code></pre>
+
+    <p>
+      Når du kjører dette, åpnes et vindu med en enkel graf. Du må ha matplotlib
+      installert. Bruk eventuelt
+      <code>pip install matplotlib</code> hvis du mangler det.
+    </p>
+
+    <a class="back-link" href="plotte-grafer.html"
+      >← Tilbake til Plotte grafer</a
+    >
+  </body>
+</html>
